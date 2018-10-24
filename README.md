@@ -562,133 +562,6 @@ plt.show()
 
 
 ```python
-hostels_df.head()
-```
-
-
-
-
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Hostel Name</th>
-      <th>City</th>
-      <th>Min. Price for One Night (yen)</th>
-      <th>Distance from City Center</th>
-      <th>Summary Score</th>
-      <th>Rating</th>
-      <th>Atmosphere</th>
-      <th>Cleaniness</th>
-      <th>Facilities</th>
-      <th>Location</th>
-      <th>Security</th>
-      <th>Staff</th>
-      <th>Value for Money</th>
-      <th>Longitude</th>
-      <th>Latitude</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>"Bike &amp; Bed" CharinCo Hostel</td>
-      <td>Osaka</td>
-      <td>3300</td>
-      <td>2.9km from city centre</td>
-      <td>9.2</td>
-      <td>Superb</td>
-      <td>8.9</td>
-      <td>9.4</td>
-      <td>9.3</td>
-      <td>8.9</td>
-      <td>9.0</td>
-      <td>9.4</td>
-      <td>9.4</td>
-      <td>135.513767</td>
-      <td>34.682678</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>&amp; And Hostel</td>
-      <td>Fukuoka-City</td>
-      <td>2600</td>
-      <td>0.7km from city centre</td>
-      <td>9.5</td>
-      <td>Superb</td>
-      <td>9.4</td>
-      <td>9.7</td>
-      <td>9.5</td>
-      <td>9.7</td>
-      <td>9.2</td>
-      <td>9.7</td>
-      <td>9.5</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>&amp;And Hostel Akihabara</td>
-      <td>Tokyo</td>
-      <td>3600</td>
-      <td>7.8km from city centre</td>
-      <td>8.7</td>
-      <td>Fabulous</td>
-      <td>8.0</td>
-      <td>7.0</td>
-      <td>9.0</td>
-      <td>8.0</td>
-      <td>10.0</td>
-      <td>10.0</td>
-      <td>9.0</td>
-      <td>139.777472</td>
-      <td>35.697447</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>&amp;And Hostel Ueno</td>
-      <td>Tokyo</td>
-      <td>2600</td>
-      <td>8.7km from city centre</td>
-      <td>7.4</td>
-      <td>Very Good</td>
-      <td>8.0</td>
-      <td>7.5</td>
-      <td>7.5</td>
-      <td>7.5</td>
-      <td>7.0</td>
-      <td>8.0</td>
-      <td>6.5</td>
-      <td>139.783667</td>
-      <td>35.712716</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>&amp;And Hostel-Asakusa North-</td>
-      <td>Tokyo</td>
-      <td>1500</td>
-      <td>10.5km from city centre</td>
-      <td>9.4</td>
-      <td>Superb</td>
-      <td>9.5</td>
-      <td>9.5</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>9.5</td>
-      <td>10.0</td>
-      <td>9.5</td>
-      <td>139.798371</td>
-      <td>35.727898</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
 # Use split to obtain numeric value from distance column
 hostels_df["Distance from City Center (km)"] = hostels_df["Distance from City Center"].str.split("km").str[0]
 ```
@@ -919,7 +792,7 @@ hostels_df.groupby(["City"]).min()["Min. Price for One Night (yen)"]
 
 
 
-### Outliers
+## Outliers
 - There are two outliers that are skewing with the hostel price distribution. Since the two outliers are of the same value and questionably high in value, it is reasonable to assume that a number was unintentionally scraped as a price value. It would be appropriate to remove these outliers.
 
 
@@ -1034,7 +907,7 @@ hostels_reduced.groupby(["Min. Price for One Night (yen)"]).count()["City"]
 
 
 
-### Price vs. Distance
+## Price vs. Distance
 - It is a common assumption that hotel and Airbnb listings are pricier the closer they are to a city center, especially in a popular tourist destination. Let's see if this also applies to hostels since they are known to be a more a affordable lodging option for travelers from any part of the world. 
 
 
@@ -1049,7 +922,7 @@ plt.show()
 ```
 
 
-![png](japan_hostels_files/japan_hostels_25_0.png)
+![png](notebooks/japan_hostels_files/japan_hostels_25_0.png)
 
 
 - It was surprising to see that there were plenty of hostels on the lower end of minimum prices that were close to city centers. It doesn't appear that distance from the city center plays a huge factor to hostel prices.
@@ -1105,19 +978,6 @@ mean_df
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1156,7 +1016,7 @@ mean_df
 
 
 
-### Average hostel cost and standard deviation (STD)
+## Average hostel cost and standard deviation (STD)
 - This visualization shows a basic overview of the average cost and price distribution to stay at a hostel in each of the listed Japanese cities. 
 
 
@@ -1172,7 +1032,7 @@ plt.show()
 ```
 
 
-![png](japan_hostels_files/japan_hostels_31_0.png)
+![png](notebooks/japan_hostels_files/japan_hostels_31_0.png)
 
 
 
@@ -1195,7 +1055,7 @@ print(score_df.isnull().sum())
     dtype: int64
 
 
-### Missing data
+## Missing data
 - To help determine what to do with missing data, the describe function for pandas was used to give a snapshot of the basic statistics of the dataframe.
 - Since the distribution wasn't highly varied and only a small fraction of the dataset is missing data, dropping the rows with missing data won't affect the following analysis too much.
 
@@ -1209,19 +1069,6 @@ score_df.describe()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1335,21 +1182,10 @@ score_df.describe()
 ```python
 # Drop missing values
 score_df = score_df.dropna().reset_index(drop=True)
-print(score_df.isnull().sum())
 ```
 
-    Summary Score      0
-    Atmosphere         0
-    Cleaniness         0
-    Facilities         0
-    Location           0
-    Security           0
-    Staff              0
-    Value for Money    0
-    dtype: int64
 
-
-### Hostel rating analysis
+## Hostel rating analysis
 - Seaborn and Scipy packages were used for the following visualizations and analysis.
 - To view the relationships between the different rating categories, a Pearsons R score generated from the Seaborn pairplot module was used to make this analysis. Atmosphere, Cleaniness, Facilities, and Value for Money are the categories that have the highest positive correlation with the summary score, positively impacting the summary score the most.
 
@@ -1370,7 +1206,7 @@ plt.show()
 ```
 
 
-![png](japan_hostels_files/japan_hostels_37_0.png)
+![png](notebooks/japan_hostels_files/japan_hostels_37_0.png)
 
 
 
@@ -1378,139 +1214,11 @@ plt.show()
 # Create a different dataset for further analysis
 city_analysis = hostels_reduced.dropna().reset_index(drop=True)
 city_analysis = city_analysis.drop(["Rating"], axis=1)
-city_analysis.head()
 ```
 
 
 
-
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Hostel Name</th>
-      <th>City</th>
-      <th>Min. Price for One Night (yen)</th>
-      <th>Summary Score</th>
-      <th>Atmosphere</th>
-      <th>Cleaniness</th>
-      <th>Facilities</th>
-      <th>Location</th>
-      <th>Security</th>
-      <th>Staff</th>
-      <th>Value for Money</th>
-      <th>Longitude</th>
-      <th>Latitude</th>
-      <th>Distance from City Center (km)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>"Bike &amp; Bed" CharinCo Hostel</td>
-      <td>Osaka</td>
-      <td>3300</td>
-      <td>9.2</td>
-      <td>8.9</td>
-      <td>9.4</td>
-      <td>9.3</td>
-      <td>8.9</td>
-      <td>9.0</td>
-      <td>9.4</td>
-      <td>9.4</td>
-      <td>135.513767</td>
-      <td>34.682678</td>
-      <td>2.9</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>&amp;And Hostel Akihabara</td>
-      <td>Tokyo</td>
-      <td>3600</td>
-      <td>8.7</td>
-      <td>8.0</td>
-      <td>7.0</td>
-      <td>9.0</td>
-      <td>8.0</td>
-      <td>10.0</td>
-      <td>10.0</td>
-      <td>9.0</td>
-      <td>139.777472</td>
-      <td>35.697447</td>
-      <td>7.8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>&amp;And Hostel Ueno</td>
-      <td>Tokyo</td>
-      <td>2600</td>
-      <td>7.4</td>
-      <td>8.0</td>
-      <td>7.5</td>
-      <td>7.5</td>
-      <td>7.5</td>
-      <td>7.0</td>
-      <td>8.0</td>
-      <td>6.5</td>
-      <td>139.783667</td>
-      <td>35.712716</td>
-      <td>8.7</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>&amp;And Hostel-Asakusa North-</td>
-      <td>Tokyo</td>
-      <td>1500</td>
-      <td>9.4</td>
-      <td>9.5</td>
-      <td>9.5</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>9.5</td>
-      <td>10.0</td>
-      <td>9.5</td>
-      <td>139.798371</td>
-      <td>35.727898</td>
-      <td>10.5</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1night1980hostel Tokyo</td>
-      <td>Tokyo</td>
-      <td>2100</td>
-      <td>7.0</td>
-      <td>5.5</td>
-      <td>8.0</td>
-      <td>6.0</td>
-      <td>6.0</td>
-      <td>8.5</td>
-      <td>8.5</td>
-      <td>6.5</td>
-      <td>139.786950</td>
-      <td>35.724384</td>
-      <td>9.4</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-### Box plot analyzing hostel ratings by city
+###Box plot analyzing hostel ratings by city
 - The ratings for hostels in Hiroshima are compactly distributed around the average meaning that the these hostels have the most consistent scores. This data shows that hostels in Hiroshima provide the most consistent service and experience for travelers.
 
 
@@ -1527,7 +1235,7 @@ plt.show()
 ```
 
 
-![png](japan_hostels_files/japan_hostels_40_0.png)
+![png](notebooks/japan_hostels_files/japan_hostels_40_0.png)
 
 
 
@@ -1880,7 +1588,7 @@ rating_list
 
 
 
-### Word Cloud of approval
+## Word Cloud of approval
 - This word cloud is a data visualization that simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
 
 
@@ -1896,7 +1604,7 @@ plt.show()
 ```
 
 
-![png](japan_hostels_files/japan_hostels_45_0.png)
+![png](notebooks/japan_hostels_files/japan_hostels_45_0.png)
 
 
 ## Conclusion
