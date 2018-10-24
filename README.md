@@ -1,9 +1,13 @@
 
-## Exploratory Data Analysis (EDA) on Japanese Hostels using Python
+# Exploratory Data Analysis (EDA) on Japanese Hostels using Python
 
 As someone who possesses a love for travel and has yet won the lottery, finding ways to save while traveling is essential. Hostels have been an amazing, affordable lodging option for travelers who are on a budget or just wants to experience something different outside of the traditional hotel options. Hostels haven't always gotten the best rap so I conducted a simple research study on hostels in Japan, a popular travel destination that is known to be hard on the wallet.
 
 This dataset was webscraped from Hostelworld by Koki Ando and is available to the public on Kaggle (https://www.kaggle.com/koki25ando/hostel-world-dataset).
+
+## Overview
+
+- A majority of the visualizations were created using Pandas and Matplotlib packages.
 
 
 ```python
@@ -504,19 +508,6 @@ city_group.rename(columns={"Hostel Name": "Hostel Count"}, inplace=True)
 ```
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -557,8 +548,7 @@ city_group.rename(columns={"Hostel Name": "Hostel Count"}, inplace=True)
 
 
 
-### Basic visualizations using Matplotlib charts
-- A majority of the visualizations were created using Pandas and Matplotlib packages. 
+### Basic visualizations using Matplotlib charts 
 - Tokyo, Osaka, and Kyoto are the top three cities for hostel counts which comes to no surprise with those cities being the top tourist destinations in Japan.
 
 
@@ -606,19 +596,6 @@ hostels_df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
