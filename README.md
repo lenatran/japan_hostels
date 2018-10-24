@@ -8,7 +8,7 @@ An analysis on an affordable lodging option for travelers using Pandas, Matplotl
 This dataset was webscraped from Hostelworld by Koki Ando and is available to the public on Kaggle (https://www.kaggle.com/koki25ando/hostel-world-dataset).
 
 
-## Reading CSV file and data clean-up
+## Reading CSV File and Data Clean-Up
 
 ```python
 # Dependencies
