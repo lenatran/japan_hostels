@@ -1,16 +1,11 @@
 
 # Exploratory Data Analysis (EDA) on Japanese Hostels using Python
 
-As someone who possesses a love for travel and has yet won the lottery, finding ways to save while traveling is essential. Hostels have been an amazing, affordable lodging option for travelers who are on a budget or just wants to experience something different outside of the traditional hotel options. Hostels haven't always gotten the best rap so I conducted a simple research study on hostels in Japan, a popular travel destination that is known to be hard on the wallet.
+An analysis on an affordable lodging option for travelers using Pandas, Matplotlib, Seaborn and Scipy modules.
 
 ## Data Source
 
 This dataset was webscraped from Hostelworld by Koki Ando and is available to the public on Kaggle (https://www.kaggle.com/koki25ando/hostel-world-dataset).
-
-## Overview
-
-- The visualizations and analysis were done using Pandas, Matplotlib, Seaborn, and Scipy packages.
-- 
 
 
 ## Reading CSV file and data clean-up
@@ -1055,7 +1050,7 @@ print(score_df.isnull().sum())
     dtype: int64
 
 
-## Missing data
+## Missing Data
 - To help determine what to do with missing data, the describe function for pandas was used to give a snapshot of the basic statistics of the dataframe.
 - Since the distribution wasn't highly varied and only a small fraction of the dataset is missing data, dropping the rows with missing data won't affect the following analysis too much.
 
@@ -1218,7 +1213,7 @@ city_analysis = city_analysis.drop(["Rating"], axis=1)
 
 
 
-## Box plot analyzing hostel ratings by city
+## Box Plot Analyzing Hostel Ratings by City
 - The ratings for hostels in Hiroshima are compactly distributed around the average meaning that the these hostels have the most consistent scores. This data shows that hostels in Hiroshima provide the most consistent service and experience for travelers.
 
 
@@ -1239,8 +1234,8 @@ plt.show()
 
 
 ## Word Cloud of approval
-- A word cloud was generated to 
-- This word cloud is a data visualization that simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
+- A word cloud was generated to create a visualization using the word ratings.
+
 
 ```python
 # Drop all NaN values
@@ -1589,6 +1584,8 @@ rating_list
 
     'Superb Fabulous Very Good Superb Very Good Superb Very Good Superb Fabulous Superb Superb Superb Superb Superb Fabulous Very Good Fabulous Fabulous Superb Fabulous Fabulous Superb Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Superb Fabulous Superb Fabulous Fabulous Superb Fabulous Superb Superb Fabulous Superb Superb Fabulous Fabulous Superb Fabulous Fabulous Superb Superb Rating Very Good Superb Fabulous Superb Superb Superb Fabulous Superb Superb Superb Superb Fabulous Superb Fabulous Superb Fabulous Fabulous Superb Superb Superb Fabulous Fabulous Very Good Superb Fabulous Superb Fabulous Superb Superb Fabulous Fabulous Fabulous Superb Superb Very Good Superb Superb Fabulous Superb Fabulous Superb Superb Superb Superb Fabulous Superb Fabulous Very Good Superb Superb Very Good Superb Superb Superb Superb Superb Fabulous Superb Fabulous Superb Superb Superb Superb Superb Rating Superb Superb Very Good Superb Superb Superb Superb Superb Superb Fabulous Superb Fabulous Fabulous Superb Superb Fabulous Superb Fabulous Fabulous Superb Good Fabulous Fabulous Good Fabulous Good Superb Fabulous Superb Fabulous Superb Fabulous Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Fabulous Very Good Very Good Fabulous Superb Superb Fabulous Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Fabulous Fabulous Superb Fabulous Very Good Superb Fabulous Superb Fabulous Superb Superb Superb Fabulous Fabulous Superb Rating Superb Superb Superb Superb Superb Very Good Superb Superb Superb Superb Superb Superb Superb Superb Fabulous Superb Fabulous Fabulous Fabulous Fabulous Superb Superb Superb Superb Fabulous Very Good Superb Fabulous Good Very Good Fabulous Superb Superb Superb Superb Superb Rating Superb Superb Superb Fabulous Rating Fabulous Fabulous Superb Superb Fabulous Fabulous Superb Superb Fabulous Rating Superb Fabulous Fabulous Superb Good Superb Superb Fabulous Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Good Very Good Very Good Fabulous Fabulous Fabulous Fabulous Superb Good Fabulous Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Fabulous Fabulous'
 
+
+- This word cloud simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
 
 
 ```python
