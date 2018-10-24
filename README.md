@@ -15,10 +15,12 @@ import seaborn as sns
 from wordcloud import WordCloud
 ```
 
-# Reading CSV file and data clean-up
+### Reading CSV file and data clean-up
 
-# Read CSV file
+
+```python
 hostels_df = pd.read_csv("../raw_data/Hostel.csv", index_col=0)
+```
 
 
 ```python
@@ -62,19 +64,6 @@ hostels_df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -204,19 +193,6 @@ city_group
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
