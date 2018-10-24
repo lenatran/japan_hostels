@@ -1585,7 +1585,6 @@ rating_list
     'Superb Fabulous Very Good Superb Very Good Superb Very Good Superb Fabulous Superb Superb Superb Superb Superb Fabulous Very Good Fabulous Fabulous Superb Fabulous Fabulous Superb Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Superb Fabulous Superb Fabulous Fabulous Superb Fabulous Superb Superb Fabulous Superb Superb Fabulous Fabulous Superb Fabulous Fabulous Superb Superb Rating Very Good Superb Fabulous Superb Superb Superb Fabulous Superb Superb Superb Superb Fabulous Superb Fabulous Superb Fabulous Fabulous Superb Superb Superb Fabulous Fabulous Very Good Superb Fabulous Superb Fabulous Superb Superb Fabulous Fabulous Fabulous Superb Superb Very Good Superb Superb Fabulous Superb Fabulous Superb Superb Superb Superb Fabulous Superb Fabulous Very Good Superb Superb Very Good Superb Superb Superb Superb Superb Fabulous Superb Fabulous Superb Superb Superb Superb Superb Rating Superb Superb Very Good Superb Superb Superb Superb Superb Superb Fabulous Superb Fabulous Fabulous Superb Superb Fabulous Superb Fabulous Fabulous Superb Good Fabulous Fabulous Good Fabulous Good Superb Fabulous Superb Fabulous Superb Fabulous Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Fabulous Very Good Very Good Fabulous Superb Superb Fabulous Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Fabulous Fabulous Superb Fabulous Very Good Superb Fabulous Superb Fabulous Superb Superb Superb Fabulous Fabulous Superb Rating Superb Superb Superb Superb Superb Very Good Superb Superb Superb Superb Superb Superb Superb Superb Fabulous Superb Fabulous Fabulous Fabulous Fabulous Superb Superb Superb Superb Fabulous Very Good Superb Fabulous Good Very Good Fabulous Superb Superb Superb Superb Superb Rating Superb Superb Superb Fabulous Rating Fabulous Fabulous Superb Superb Fabulous Fabulous Superb Superb Fabulous Rating Superb Fabulous Fabulous Superb Good Superb Superb Fabulous Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Good Very Good Very Good Fabulous Fabulous Fabulous Fabulous Superb Good Fabulous Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Fabulous Fabulous'
 
 
-- This word cloud simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
 
 
 ```python
@@ -1602,6 +1601,7 @@ plt.show()
 
 ![png](notebooks/japan_hostels_files/japan_hostels_45_0.png)
 
+- This word cloud simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
 
 ## Conclusion
 It is clear that hostels in Japan are a travel housing option that shouldn't be overlooked. Their close proximity to city centers, low cost, value for your money, and customer satisfaction are all more than enough reason for any traveler to look into, whether they're on a budget or not. Happy traveling.
