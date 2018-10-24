@@ -521,7 +521,7 @@ city_group.rename(columns={"Hostel Name": "Hostel Count"}, inplace=True)
 
 
 
-## Basic visualizations using Matplotlib charts 
+## Basic Visualizations using Matplotlib Charts 
 - Tokyo, Osaka, and Kyoto are the top three cities for hostel counts which comes to no surprise with those cities being the top tourist destinations in Japan.
 
 
@@ -1016,7 +1016,7 @@ mean_df
 
 
 
-## Average hostel cost and standard deviation (STD)
+## Average Hostel Cost and Standard Deviation (STD)
 - This visualization shows a basic overview of the average cost and price distribution to stay at a hostel in each of the listed Japanese cities. 
 
 
@@ -1185,7 +1185,7 @@ score_df = score_df.dropna().reset_index(drop=True)
 ```
 
 
-## Hostel rating analysis
+## Hostel Rating Analysis
 - Seaborn and Scipy packages were used for the following visualizations and analysis.
 - To view the relationships between the different rating categories, a Pearsons R score generated from the Seaborn pairplot module was used to make this analysis. Atmosphere, Cleaniness, Facilities, and Value for Money are the categories that have the highest positive correlation with the summary score, positively impacting the summary score the most.
 
@@ -1218,7 +1218,7 @@ city_analysis = city_analysis.drop(["Rating"], axis=1)
 
 
 
-###Box plot analyzing hostel ratings by city
+## Box plot analyzing hostel ratings by city
 - The ratings for hostels in Hiroshima are compactly distributed around the average meaning that the these hostels have the most consistent scores. This data shows that hostels in Hiroshima provide the most consistent service and experience for travelers.
 
 
@@ -1238,6 +1238,9 @@ plt.show()
 ![png](notebooks/japan_hostels_files/japan_hostels_40_0.png)
 
 
+## Word Cloud of approval
+- A word cloud was generated to 
+- This word cloud is a data visualization that simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
 
 ```python
 # Drop all NaN values
@@ -1586,10 +1589,6 @@ rating_list
 
     'Superb Fabulous Very Good Superb Very Good Superb Very Good Superb Fabulous Superb Superb Superb Superb Superb Fabulous Very Good Fabulous Fabulous Superb Fabulous Fabulous Superb Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Superb Fabulous Superb Fabulous Fabulous Superb Fabulous Superb Superb Fabulous Superb Superb Fabulous Fabulous Superb Fabulous Fabulous Superb Superb Rating Very Good Superb Fabulous Superb Superb Superb Fabulous Superb Superb Superb Superb Fabulous Superb Fabulous Superb Fabulous Fabulous Superb Superb Superb Fabulous Fabulous Very Good Superb Fabulous Superb Fabulous Superb Superb Fabulous Fabulous Fabulous Superb Superb Very Good Superb Superb Fabulous Superb Fabulous Superb Superb Superb Superb Fabulous Superb Fabulous Very Good Superb Superb Very Good Superb Superb Superb Superb Superb Fabulous Superb Fabulous Superb Superb Superb Superb Superb Rating Superb Superb Very Good Superb Superb Superb Superb Superb Superb Fabulous Superb Fabulous Fabulous Superb Superb Fabulous Superb Fabulous Fabulous Superb Good Fabulous Fabulous Good Fabulous Good Superb Fabulous Superb Fabulous Superb Fabulous Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Fabulous Very Good Very Good Fabulous Superb Superb Fabulous Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Superb Superb Superb Superb Fabulous Fabulous Superb Fabulous Very Good Superb Fabulous Superb Fabulous Superb Superb Superb Fabulous Fabulous Superb Rating Superb Superb Superb Superb Superb Very Good Superb Superb Superb Superb Superb Superb Superb Superb Fabulous Superb Fabulous Fabulous Fabulous Fabulous Superb Superb Superb Superb Fabulous Very Good Superb Fabulous Good Very Good Fabulous Superb Superb Superb Superb Superb Rating Superb Superb Superb Fabulous Rating Fabulous Fabulous Superb Superb Fabulous Fabulous Superb Superb Fabulous Rating Superb Fabulous Fabulous Superb Good Superb Superb Fabulous Superb Fabulous Fabulous Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Good Very Good Very Good Fabulous Fabulous Fabulous Fabulous Superb Good Fabulous Superb Superb Superb Superb Superb Superb Fabulous Fabulous Superb Fabulous Fabulous'
 
-
-
-## Word Cloud of approval
-- This word cloud is a data visualization that simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
 
 
 ```python
