@@ -333,19 +333,6 @@ city_group
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -471,23 +458,7 @@ city_group = city_group[["City", "Hostel Name"]]
 city_group
 ```
 
-
-
-
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -527,27 +498,10 @@ city_group
 </div>
 
 
-
-
 ```python
 # Rename columns
 city_group.rename(columns={"Hostel Name": "Hostel Count"}, inplace=True)
 ```
-
-    /Users/lenatran/anaconda3/envs/PythonData/lib/python3.6/site-packages/pandas/core/frame.py:2746: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-      **kwargs)
-
-
-
-```python
-city_group
-```
-
-
-
 
 <div>
 <style>
