@@ -537,7 +537,7 @@ plt.show()
 ```
 
 
-![png](japan_hostels/notebooks/japan_hostels_files/japan_hostels_10_0.png)
+![png](notebooks/japan_hostels_files/japan_hostels_10_0.png)
 
 
 - As seen in the pie chart below, more than 1/3 of the hostels are located in Tokyo. Around 2/3 of the hostels are located in Tokyo and Osaka.
@@ -557,7 +557,7 @@ plt.show()
 ```
 
 
-![png](japan_hostels/notebooks/japan_hostels_files/japan_hostels_12_0.png)
+![png](notebooks/japan_hostels_files/japan_hostels_12_0.png)
 
 
 
