@@ -1,5 +1,5 @@
 
-# Exploratory Data Analysis (EDA) on Japan Hostels using Python
+# Exploratory Data Analysis (EDA) on Hostels in Japan using Python
 
 An analysis on an affordable lodging option for travelers using Pandas, Matplotlib, Seaborn and Scipy modules.
 
