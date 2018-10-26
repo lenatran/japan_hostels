@@ -532,7 +532,7 @@ plt.show()
 ```
 
 
-![png](notebooks/japan_hostels_files/japan_hostels_10_0.png)
+![png](reports/figures/hostel_bar.png)
 
 
 - As seen in the pie chart below, more than 1/3 of the hostels are located in Tokyo. Around 2/3 of the hostels are located in Tokyo and Osaka.
@@ -552,7 +552,7 @@ plt.show()
 ```
 
 
-![png](notebooks/japan_hostels_files/japan_hostels_12_0.png)
+![png](reports/figures/hostel_pie.png)
 
 
 
@@ -917,7 +917,7 @@ plt.show()
 ```
 
 
-![png](notebooks/japan_hostels_files/japan_hostels_25_0.png)
+![png](reports/figures/distance_scatter.png)
 
 
 - It was surprising to see that there were plenty of hostels on the lower end of minimum prices that were close to city centers. It doesn't appear that distance from the city center plays a huge factor to hostel prices.
@@ -1027,7 +1027,7 @@ plt.show()
 ```
 
 
-![png](notebooks/japan_hostels_files/japan_hostels_31_0.png)
+![png](reports/figures/hostel_avg.png)
 
 
 
@@ -1200,7 +1200,7 @@ plt.show()
 ```
 
 
-![png](notebooks/japan_hostels_files/japan_hostels_37_0.png)
+![png](reports/figures/ratings_pairplots.png)
 
 
 
@@ -1229,7 +1229,7 @@ plt.show()
 ```
 
 
-![png](notebooks/japan_hostels_files/japan_hostels_40_0.png)
+![png](reports/figures/ratings_boxplots.png)
 
 
 ## Word Cloud of approval
@@ -1598,7 +1598,7 @@ plt.show()
 ```
 
 
-![png](notebooks/japan_hostels_files/japan_hostels_45_0.png)
+![png](reports/figures/ratings_wordcloud.png)
 
 - This word cloud simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
 
