@@ -1034,7 +1034,7 @@ plt.show()
 ```python
 # Create new dataframe for hostel rating analysis and view # of missing data
 sns.set(style="white")
-score_df = hostels_reduced.loc[:, "Summary Score":"Value for Money"]
+score_df = hostels_df.loc[:, "Summary Score":"Value for Money"]
 score_df = score_df.drop(["Rating"], axis=1)
 print(score_df.isnull().sum())
 ```
@@ -1063,7 +1063,6 @@ score_df.describe()
 
 
 
-<div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1081,36 +1080,36 @@ score_df.describe()
   <tbody>
     <tr>
       <th>count</th>
-      <td>325.000000</td>
-      <td>325.000000</td>
-      <td>325.000000</td>
-      <td>325.000000</td>
-      <td>325.000000</td>
-      <td>325.000000</td>
-      <td>325.000000</td>
-      <td>325.000000</td>
+      <td>327.000000</td>
+      <td>327.000000</td>
+      <td>327.000000</td>
+      <td>327.000000</td>
+      <td>327.000000</td>
+      <td>327.000000</td>
+      <td>327.000000</td>
+      <td>327.000000</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>8.786462</td>
-      <td>8.252615</td>
-      <td>9.012000</td>
-      <td>8.592000</td>
-      <td>8.696000</td>
-      <td>8.950154</td>
-      <td>9.137231</td>
-      <td>8.859692</td>
+      <td>8.782569</td>
+      <td>8.238838</td>
+      <td>9.011927</td>
+      <td>8.597554</td>
+      <td>8.694801</td>
+      <td>8.947401</td>
+      <td>9.133333</td>
+      <td>8.848318</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>0.962508</td>
-      <td>1.374986</td>
-      <td>1.216988</td>
-      <td>1.286755</td>
-      <td>1.105297</td>
-      <td>1.116532</td>
-      <td>1.088009</td>
-      <td>1.037926</td>
+      <td>0.960909</td>
+      <td>1.382002</td>
+      <td>1.215775</td>
+      <td>1.285356</td>
+      <td>1.102703</td>
+      <td>1.114345</td>
+      <td>1.086513</td>
+      <td>1.047809</td>
     </tr>
     <tr>
       <th>min</th>
@@ -1126,7 +1125,7 @@ score_df.describe()
     <tr>
       <th>25%</th>
       <td>8.600000</td>
-      <td>7.900000</td>
+      <td>7.800000</td>
       <td>8.800000</td>
       <td>8.000000</td>
       <td>8.000000</td>
@@ -1143,7 +1142,7 @@ score_df.describe()
       <td>9.000000</td>
       <td>9.200000</td>
       <td>9.400000</td>
-      <td>9.100000</td>
+      <td>9.000000</td>
     </tr>
     <tr>
       <th>75%</th>
@@ -1207,7 +1206,7 @@ plt.show()
 
 ```python
 # Create a different dataset for further analysis
-city_analysis = hostels_reduced.dropna().reset_index(drop=True)
+city_analysis = hostels_df.dropna().reset_index(drop=True)
 city_analysis = city_analysis.drop(["Rating"], axis=1)
 ```
 
