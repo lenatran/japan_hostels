@@ -425,7 +425,7 @@ city_group
 
 
 ```python
-# Create new dataframe for city name and hostel count
+# Create new data frame for city name and hostel count
 city_group = city_group[["City", "Hostel Name"]]
 city_group
 ```
@@ -963,7 +963,7 @@ price_std
 
 
 ```python
-# Create new dataframe for mean values
+# Create new data frame for mean values
 mean_df = pd.DataFrame({"City":price_mean.index, "Price Mean (yen)":price_mean.values})
 mean_df = mean_df.set_index("City")
 mean_df
@@ -1032,7 +1032,7 @@ plt.show()
 
 
 ```python
-# Create new dataframe for hostel rating analysis and view # of missing data
+# Create new data frame for hostel rating analysis and view # of missing data
 sns.set(style="white")
 score_df = hostels_df.loc[:, "Summary Score":"Value for Money"]
 score_df = score_df.drop(["Rating"], axis=1)
@@ -1051,12 +1051,12 @@ print(score_df.isnull().sum())
 
 
 ## Missing Data
-- To help determine what to do with missing data, the describe function for pandas was used to give a snapshot of the basic statistics of the dataframe.
+- To help determine what to do with missing data, the describe function for pandas was used to give a snapshot of the basic statistics of the data frame.
 - Since the distribution wasn't highly varied and only a small fraction of the dataset is missing data, dropping the rows with missing data won't affect the following analysis too much.
 
 
 ```python
-# Generate descriptive statistics for dataframe to help determine what to do with missing data
+# Generate descriptive statistics for data frame to help determine what to do with missing data
 score_df.describe()
 ```
 
@@ -1181,7 +1181,7 @@ score_df = score_df.dropna().reset_index(drop=True)
 
 ## Hostel Rating Analysis
 - Seaborn and Scipy packages were used for the following visualizations and analysis.
-- To view the relationships between the different rating categories, a Pearsons R score generated from the Seaborn pairplot module was used to make this analysis. Atmosphere, Cleaniness, Facilities, and Value for Money are the categories that have the highest positive correlation with the summary score, positively impacting the summary score the most.
+- To view the relationships between the different rating categories, a Pearsons R score generated from the Seaborn pairplot module was used to make this analysis. Atmosphere, Cleanliness, Facilities, and Value for Money are the categories that have the highest positive correlation with the summary score, positively impacting the summary score the most.
 
 
 ```python
@@ -1232,7 +1232,7 @@ plt.show()
 ![png](reports/figures/ratings_boxplots.png)
 
 
-## Word Cloud of approval
+## Word Cloud of Approval
 - A word cloud was generated to create a visualization using the word ratings.
 
 
@@ -1600,7 +1600,7 @@ plt.show()
 
 ![png](reports/figures/ratings_wordcloud.png)
 
-- This word cloud simply depicts critics' and travelers' approval and satisfaction with hostels in Japan.
+- This word cloud simply depicts travelers' approval and satisfaction with hostels in Japan.
 
 ## Conclusion
 It is clear that hostels in Japan are a travel housing option that shouldn't be overlooked. Their close proximity to city centers, low cost, value for your money, and customer satisfaction are all more than enough reason for any traveler to look into, whether they're on a budget or not. Happy traveling.
